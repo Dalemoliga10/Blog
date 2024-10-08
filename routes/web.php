@@ -29,3 +29,8 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 //     }
     
 // });
+
+
+Route::get('prueba', function(){
+    return 'Hola desde la ruta de prueba';
+});
