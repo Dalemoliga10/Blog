@@ -9,6 +9,6 @@ class Post extends Model
 {
     use HasFactory;
 
-    //Tabla con la que debe conectarse
+    //Tabla con la que debe conectarse, por defecto es mismo nombre en plural (ingles !!ATENCION¡¡)
     protected $table = 'posts';
 }
