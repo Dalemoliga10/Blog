@@ -38,9 +38,9 @@ Route::get('prueba', function(){
     // //Crear registro
     // $post = new Post;
 
-    // $post->title = "Titulo de prueba 2";
-    // $post->content = "Contenido de prueba 2";
-    // $post->categoria = "Categoria de prueba 2";
+    // $post->title = "TíTuLo DE prueba 4";
+    // $post->content = "Contenido de prueba 4";
+    // $post->categoria = "Categoria de prueba 4";
 
     // $post->save();
 
@@ -58,8 +58,9 @@ Route::get('prueba', function(){
             //Listar registros
 
 //Pillas posts en los cuales el id sea >=2
-// $posts = Post::where("id", ">=", "2")
-//                 ->get();
+$posts = Post::where("id", ">=", "4")
+                ->get();
+                return $posts;
 
 
 //Descendente
@@ -78,7 +79,7 @@ Route::get('prueba', function(){
 
 // $post->delete();
 
-return "eliminado";
+// return "eliminado";
 
 
 });
